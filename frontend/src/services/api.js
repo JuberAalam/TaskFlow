@@ -7,7 +7,7 @@ const getApiUrl = () => {
   if (isProduction) {
     // IMPORTANT: Replace this URL with your actual Render backend URL after deployment
     // Example: 'https://task-management-api.onrender.com/api/v1'
-    return 'https://your-backend-app.onrender.com/api/v1';
+    return 'https://taskflow-1-qsc7.onrender.com/api/v1';
   }
   
   // Default to localhost for development
