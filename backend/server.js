@@ -5,13 +5,13 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
 const swaggerUi = require('swagger-ui-express');
-const connectDB = require('./config/database');
-const swaggerSpec = require('./config/swagger');
-const errorHandler = require('./middleware/errorHandler');
+const connectDB = require('./src/config/database');
+const swaggerSpec = require('./src/config/swagger');
+const errorHandler = require('./src/middleware/errorHandler');
 
 // Route imports
-const authRoutes = require('./routes/authRoutes');
-const taskRoutes = require('./routes/taskRoutes');
+const authRoutes = require('./src/routes/authRoutes');
+const taskRoutes = require('./src/routes/taskRoutes');
 
 // Initialize app
 const app = express();
